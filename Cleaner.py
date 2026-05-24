@@ -1,4 +1,3 @@
-# 1. Create an empty list to keep track of unique emails (to avoid duplicates)
 seen_emails = []
 
 print("Starting the data cleaning process...")
