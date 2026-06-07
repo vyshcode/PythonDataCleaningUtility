@@ -1,19 +1,27 @@
-# PythonDataCleaningUtility
-A Python based text processing utility designed to automate data cleaning, standardize formatting, and eliminate duplicate records.
+# Python Data Cleaning Utility
 
-# Core Functional Features
-* **Data Deduplication:** Tracks unique identification criteria across streams to isolate and remove redundant entries.
-* **Text Standardization:** Neutralizes erratic spacing anomalies and forces systematic title capitalization (e.g., transforming `jOhN` into `John`).
-* **Format Normalization:** Enforces case-insensitive constraints across email records to maintain dataset integrity.
-* **File I/O Operations:** Dynamically handles streaming data from raw text inputs and maps structured records into isolated output environments.
+A Python-based text processing utility designed to automate data cleaning, standardize formatting, and eliminate duplicate records with production-grade efficiency and error handling.
 
-# Architectural Concepts Learned
-* **Stream & File Management:** Implementation of contextual file mapping using Python's primitive `with open()` protocols.
-* **String Parsing Optimization:** Processing unstructured string schemas using native tokenization (`.split()`) and sanitization methods (`.strip()`, `.capitalize()`).
-* **Linear Filtering Logic:** Utilizing conditional execution branches and transient data structures (lists) to handle real-time duplicate control.
+## Core Functional Features
+* **Lightning-Fast Deduplication:** Utilizes high-performance hashing structures to isolate and remove redundant entries across high-volume streams instantly.
+* **Fault-Tolerant Error Handling:** Gracefully catches malformed or corrupted lines (such as missing separation boundaries) without interrupting the stream execution.
+* **Text Standardization:** Neutralizes erratic spacing anomalies, strips trailing tabs, and forces systematic title capitalization across multi-word fields (e.g., transforming `jOhN dOe` into `John Doe`).
+* **Format Normalization:** Enforces case-insensitive constraints across email data structures to maintain strict relational dataset integrity.
+* **Memory-Efficient I/O:** Safely handles incoming raw data line-by-line, minimizing memory consumption for large file sets before outputting structured data.
 
-# Execution Guide
-To run this utility locally, ensure your working directory contains both `Cleaner.py` and the target dataset `dirty_data.txt`, then execute:
+## Architectural Concepts Applied
+* **Contextual File Streaming:** Simultaneous management of read/write file streams using a unified, safe Python `with open()` block.
+* **O(1) Lookup Optimization:** Replacing linear list lookups with hash set collections (`set()`) for near-instantaneous duplication tracking.
+* **Exception Handling Patterns:** Implementation of isolated `try/except` safety blocks to handle structural mutations and `ValueError` occurrences gracefully.
+* **Real-time Stream Tracking:** Leveraging `enumerate()` counters to supply precise line-by-line diagnostics and human-readable feedback during processing.
 
-```bash
-python Cleaner.py
+## Execution Guide
+
+### 1. Project Structure
+Ensure your project files are organized inside your workspace directory like this:
+```text
+PythonDataCleaningUtility/
+│
+├── Cleaner.py
+├── dirty_data.txt
+└── README.md

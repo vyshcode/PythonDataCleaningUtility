@@ -1,4 +1,11 @@
-jOhN,john@email.com
-  alice  ,alice@email.com
-jOhN,john@email.com
-bOb,BOB@EMAIL.COM
+john doe, JOHNDOE@EMAIL.COM
+sarah smith,sarah.smith@example.com
+  BOB JOHNSON  , bob.johnson@gmail.com
+ALICE WILLIAMS,alice.williams@yahoo.com
+
+john doe,johndoe@email.com
+InvalidLineWithNoComma
+Smith, Jr., Robert,robert.smith@company.com
+   , missingname@email.com
+EMILY DAVIS, emily.davis@outlook.com
+sarah smith, SARAH.SMITH@EXAMPLE.COM
