@@ -25,3 +25,9 @@ PythonDataCleaningUtility/
 ├── Cleaner.py
 ├── dirty_data.txt
 └── README.md
+
+### 2. Local Execution
+Ensure your terminal is navigated inside the project folder, then execute the script:
+
+```bash
+python Cleaner.py
